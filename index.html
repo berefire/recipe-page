@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" href="./assets/fonts/outfit/Outfit-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="./assets/fonts/young-serif/YoungSerif-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <meta name="author" content="Berefire">
+  <meta name="description"
+    content="Recipe page built with HTML and CSS, showcasing clean semantics, accesiblity, and responsive design.">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="preload" href="./css/styles.css" as="style">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/media/desktop.css" media="screen and (min-width: 48rem)">
 
   <title>Frontend Mentor | Recipe page</title>
 
@@ -21,7 +24,7 @@
 
       <header class="recipe__header">
         <figure class="recipe__image">
-          <img src="./assets/images/image-omelette.jpeg" alt="Simple Omelette" width="1312" height="600">
+          <img src="./assets/images/image-omelette.jpeg" alt="Simple Omelette" width="1312" height="600" fetchpriority="high">
         </figure>
         <div class="recipe__header-content">
           <h1>Simple Omelette Recipe</h1>
