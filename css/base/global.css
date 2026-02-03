@@ -67,17 +67,19 @@ ol li {
 
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-tr {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: var(--space-s);
+td {
     padding-block: var(--space-xs);
-    padding-inline: var(--space-l);
 }
 
-tr:first-child {
+td:first-child {
+    padding-inline-start: var(--space-l);
+    padding-inline-end: var(--space-s);
+}
+
+tr:first-child td {
     padding-block-start: 0;
 }
 
@@ -85,8 +87,12 @@ tr:not(:last-child) {
     border-bottom: var(--divider);
 }
 
-
-td:nth-child(2) {
+td:last-child {
     color: var(--color-bg-content);
     font-weight: var(--weight-bold);
+    padding-inline-end: var(--space-l);
+}
+
+tr:last-child td {
+    padding-block-end: 0;
 }
