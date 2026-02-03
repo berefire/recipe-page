@@ -1,0 +1,6 @@
+.attribution {
+    font-size: var(--text-fluid-xs);
+    line-height: var(--leading-footer);
+    color: black;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.box {
+    padding: var(--space-xl) var(--space-l);
+    background-color: var(--color-white);
+}
+
+.box-m {
+    padding: var(--space-m);
+}
+
+.box-l {
+    padding: 0;
+}
+
+/* uses --bp-m */
+@media (min-width: 30rem) {
+    .box-l {
+        padding: var(--space-xl);
+        background-color: var(--color-white);
+        max-width: var(--card-fluid);
+        margin-block: var(--space-3xl);
+        margin-inline: var(--space-2xl);
+        border-radius: var(--radius-l); 
+    }
+
+    .box {
+        padding: var(--space-xl) 0 0;
+    }
+}
+
+
+

@@ -1,0 +1,18 @@
+.page {
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+.page__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* uses --bp-m */
+@media (min-width: 30rem) {
+    .page__image img {
+        border-radius: var(--radius-m);    
+    }
+}

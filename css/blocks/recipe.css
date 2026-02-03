@@ -1,0 +1,47 @@
+.recipe__time h2 {
+    font-size: var(--text-fixed-m);
+    font-family: var(--font-main);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-bg-h2-strong);
+}
+
+.recipe__time ul li::before {
+  color: var(--color-bg-h2-strong);
+}
+
+.recipe__ingredients ul li::before {
+  color: var(--color-bg-content);
+}
+
+.recipe__instructions ol {
+    counter-reset: step-counter;
+}
+
+.recipe__instructions ol li::before {
+  content: counter(step-counter) ".";
+  counter-increment: step-counter;
+  color: var(--color-bg-content);
+  font-weight: var(--weight-bold);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* uses --bp-m */
+@media (min-width: 30rem) {
+    .recipe__time {
+        background-color: var(--color-bg-secondary);
+        border-radius: var(--radius-m);
+    }
+}
+
+

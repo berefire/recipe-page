@@ -1,0 +1,69 @@
+:root {
+    /* Colors */
+    --color-white: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(30, 54%, 90%);
+    --color-bg-secondary: hsl(330, 100%, 98%);
+    --color-bg-h1: hsl(24, 5%, 18%);
+    --color-bg-content: hsl(14, 45%, 36%);
+    --color-bg-h2-strong: hsl(332, 51%, 32%);
+    --color-bg-border: hsl(30, 18%, 87%);
+
+    --color-bg-text: hsl(30, 10%, 34%);
+    --color-link: hsl(228, 45%, 44%);
+
+    /* Spacing scale */
+    --space-2xs: 0.5rem;    /* 8px */
+    --space-xs: 0.75rem;    /* 12px */
+    --space-s: 1rem;        /* 16px */
+    --space-m: 1.5rem;      /* 24px */
+    --space-l: 2rem;        /* 32px */
+    --space-xl: 2.5rem;     /* 40px */   
+    --space-2xl: 3rem;      /* 48px */
+    --space-3xl: 8rem;     /* 128px */
+
+    /* Radius */
+    --radius-m: 0.75rem;   /* 12px */
+    --radius-l: 1.5rem;   /* 24px */
+
+    /* Font families */
+    --font-main: "Outfit", sans-serif;
+    --font-titles: "Young Serif", serif;
+
+    /* Font weights */
+    --weight-regular: 400;
+    --weight-semi-bold: 600;
+    --weight-bold: 700;
+
+    /* Font sizes fluid */
+    --text-fluid-l: clamp(var(--text-fixed-xl), 2rem + 0.25vw, var(--text-fixed-2xl));  /* 36px - 40px */
+
+    /* Font sizes fixed */
+    --text-fixed-s: 1rem;       /* 16px */
+    --text-fixed-m: 1.25rem;    /* 20px */
+    --text-fixed-l: 1.75rem;    /* 28px */
+    --text-fixed-xl: 2.2rem;    /* 35.2px */
+    --text-fixed-2xl: 2.5rem;   /* 40px */
+
+    /* Additional font sizes */
+    --text-fluid-xs: clamp(var(--text-fixed-xs), 1vw, var(--text-fixed-sm));  /* 11px - 13px */
+
+    --text-fixed-xs: 0.7rem;    /* 11px */
+    --text-fixed-sm: 0.8rem;     /* 13px */
+
+    /* Line heights */
+    --leading-title: 1;
+    --leading-regular: 1.5; 
+    --leading-footer: 1.4;
+
+    /* Card widths */
+    --card-max: 46rem;      /* 736px */
+    --card-min: 38.5rem;    /* 616px */
+
+    --card-fluid: clamp(var(--card-min), min(100vw, 100%), var(--card-max));
+
+    /* Borders */
+    --divider: 0.0625rem solid var(--color-bg-border);
+
+    /* Break points */
+    --bp-m: 30rem;      /* 480px */
+}
