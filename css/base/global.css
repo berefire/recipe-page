@@ -32,9 +32,15 @@ h2 {
     font-size: var(--text-fixed-l);
 }
 
-hr {
-    border: var(--divider);
+section{
+    padding-block-end: var(--space-l);
+    border-bottom: var(--divider);
+}
 
+section:first-of-type,
+section:last-of-type {
+  padding-block-end: 0;
+  border-bottom: none;
 }
 
 ul li::before {
